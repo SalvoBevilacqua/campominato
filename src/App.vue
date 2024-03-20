@@ -1,6 +1,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
     data() {
         return {
@@ -24,5 +25,4 @@ export default {
 
 <style lang="scss">
 @use "./style/general.scss" as *;
-@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 </style>

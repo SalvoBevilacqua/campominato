@@ -40,8 +40,10 @@ export default {
                     this.store.itemToCheck = 10;
                     break;
             };
-            this.store.started = true;
+            // popolo l'array delle bombe
             this.randomArray(this.store.numOfCells);
+
+            // stampo l'array delle bombe
             console.log('le bombe sono nelle caselle: ', this.store.arrayBomb);
         },
         randomNum(min, max) {

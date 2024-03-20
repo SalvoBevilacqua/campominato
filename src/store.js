@@ -5,7 +5,6 @@ export const store = reactive({
     numOfCells: 0,
     classCell: 'col10',
     isABomb: false,
-    started: false,
     numberOfBomb: 0,
     itemToCheck: 0,
     arrayToCheck: [],
