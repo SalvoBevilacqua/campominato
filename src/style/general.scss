@@ -1,0 +1,30 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.ms_width {
+    height: 60vh;
+    aspect-ratio: 1;
+    margin: 0 auto;
+}
+
+.col10 {
+    width: 10%;
+    aspect-ratio: 1;
+}
+
+.col8 {
+    width: calc(100%/8);
+    aspect-ratio: 1;
+}
+
+.col6 {
+    width: calc(100%/6);
+    aspect-ratio: 1;
+}
