@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+**Campominato**
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- Il Campominato è stato il mio primo gioco interamente realizzato con js, html e css.
+- E' possibile selezionare tre livelli di difficoltà.
+- Si vince riuscendo a cliccare su tte le caselle che non sono bombe, ogni volta che si tocca una casella che non ha bombe adiacenti, questa diventa bianca. Se sono invece presenti bombe adiancenti alla casella, questa da il numero esatto di bombe nelle vicinanze!
+- Ps: per i più pigri, in console avrete tutto ciò che vi servirà a vincere la partita. 
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Immagine repo](https://github.com/SalvoBevilacqua/campominato/blob/main/img_repo/img_repo.png)
