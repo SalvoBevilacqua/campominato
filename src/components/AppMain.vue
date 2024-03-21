@@ -7,6 +7,11 @@ export default {
         };
     },
     methods: {
+        won() {
+            const dom = document.getElementById("mydom");
+            dom.innerHTML = '';
+            dom.innerHTML = `<h2 class="mt-5 pt-5 text-center">Complimenti, hai vinto!</h2>`;
+        },
         foundBomb() {
             this.store.arrayBomb.forEach(bomb => {
                 const bombs = document.getElementById(bomb);
@@ -20,7 +25,6 @@ export default {
 
             this.store.arrayBomb.forEach(element => {
                 if (num === element) {
-                    console.log('sono una bomba');
                     this.store.isABomb = true;
                     this.foundBomb();
                     return;
@@ -59,11 +63,18 @@ export default {
                 });
 
                 // stampo il numero di bombe vicine
-                const bombs = document.getElementById(num);
-                bombs.innerHTML = '';
-                console.log(numberOfBombClose);
-                bombs.innerHTML = `<p class="m-0 p-0">${numberOfBombClose}</p>`;
+                const notABombs = document.getElementById(num);
+                notABombs.innerHTML = '';
+                if (numberOfBombClose !== 0) {
+                    notABombs.innerHTML = `<p class="m-0 p-0">${numberOfBombClose}</p>`;
+                }
+                this.store.points = this.store.points + 1;
             };
+
+            // verifico la vincita
+            if (this.store.points === this.store.maxPoints) {
+                this.won();
+            }
         },
         existNumber(int) {
             if (int > 0 && int < 101) {
@@ -79,11 +90,12 @@ export default {
 
     <div v-else class="row p-0 m-0">
         <div v-for="num in store.numOfCells"
-            class="border d-flex justify-content-center align-items-center align-content-center"
+            class="border d-flex justify-content-center align-items-center align-content-center fw-bold"
             :class="store.classCell" @click="checkBomb(num)" :id="num">
-            <p class="m-0 p-0">
-                {{ num }}
+            <p class="m-0 p-0 fw-bold">
                 <i class="fa-solid fa-fan"></i>
+                <!-- per debug
+                {{ num }} -->
             </p>
         </div>
     </div>

@@ -11,4 +11,7 @@ export const store = reactive({
     leftColumn: [],
     rightColumn: [],
     arrayBomb: [],
+    points: 0,
+    won: false,
+    maxPoints: 0,
 });

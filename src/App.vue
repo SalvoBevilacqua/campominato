@@ -16,9 +16,11 @@ export default {
 
 <template>
     <div class="wrapper">
-        <AppHeader />
-        <div class="my-4 ms_width">
-            <AppMain />
+        <div class="container">
+            <AppHeader />
+            <div class="mt-4 pt-4 ms_width" id="mydom">
+                <AppMain />
+            </div>
         </div>
     </div>
 </template>

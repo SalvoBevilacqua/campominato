@@ -9,7 +9,7 @@ img {
 }
 
 .ms_width {
-    height: 60vh;
+    width: 40rem;
     aspect-ratio: 1;
     margin: 0 auto;
 }
@@ -27,4 +27,8 @@ img {
 .col6 {
     width: calc(100%/6);
     aspect-ratio: 1;
+}
+
+a {
+    cursor: pointer;
 }
